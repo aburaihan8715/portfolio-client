@@ -1,0 +1,8 @@
+// main color
+gray,cyan
+
+
+
+// resources
+https://asfakahmed.netlify.app/
+https://professional-portfolio-23.netlify.app/

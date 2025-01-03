@@ -3,9 +3,8 @@ import { useState } from "react";
 
 import BrandLogo from "./brand-logo";
 import { MdClose, MdMenu } from "react-icons/md";
-import ActiveLink from "./active-link";
-
-import Link from "next/link";
+import ThemeToggleButton from "./theme-toggle-button";
+import HashLink from "./hash-link";
 
 // HEADER COMPONENT
 const Header = () => {
@@ -14,22 +13,44 @@ const Header = () => {
   const menuItems = (
     <>
       <li>
-        <ActiveLink href="/">Home</ActiveLink>
+        <HashLink href="#about-me">About Me</HashLink>
+      </li>
+      <li>
+        <HashLink href="#experiences">Experience</HashLink>
+      </li>
+      <li>
+        <HashLink href="#skills">Skills</HashLink>
+      </li>
+      <li>
+        <HashLink href="#projects">Projects</HashLink>
+      </li>
+      <li>
+        <HashLink href="#blogs">Blogs</HashLink>
+      </li>
+      <li>
+        <HashLink href="#achievements">Achievements</HashLink>
       </li>
     </>
   );
 
   return (
-    <header className="sticky top-0 z-50 border">
+    <header className="sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
       {/* DESKTOP NAV */}
-      <div className="sticky top-0 z-20 hidden h-[80px] w-full items-center justify-between bg-green-50 px-10 lg:flex">
-        {/* LOGO */}
-        <Link href="/">
-          <BrandLogo />
-        </Link>
-        <nav>
-          <ul className="flex gap-4 font-semibold text-gray-700">{menuItems}</ul>
-        </nav>
+      <div className="max-w-7xl w-full mx-auto">
+        <div className="sticky top-0 z-20 hidden h-[80px] w-full items-center justify-between lg:flex">
+          {/* LOGO */}
+          <HashLink href="#hero">
+            <BrandLogo />
+          </HashLink>
+          <nav>
+            <ul className="flex gap-4 text-[18px]  text-gray-300">{menuItems}</ul>
+          </nav>
+
+          <div className="flex gap-3 text-gray-300">
+            <ThemeToggleButton />
+            <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
+          </div>
+        </div>
       </div>
 
       {/* MOBILE NAV */}

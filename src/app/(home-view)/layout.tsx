@@ -7,7 +7,7 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="">
       <Header />
       <div>{children}</div>
       <Footer />

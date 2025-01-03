@@ -4,8 +4,22 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  color: #333;
+  background-image: linear-gradient(
+    to right,
+    #11151d,
+    #11161f,
+    #111620,
+    #111722,
+    #111724,
+    #111724,
+    #111724,
+    #111724,
+    #111722,
+    #111620,
+    #11161f,
+    #11151d
+  );
+  color: #eee;
 }
 
 @layer utilities {
@@ -77,4 +91,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
