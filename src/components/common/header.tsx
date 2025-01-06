@@ -34,56 +34,59 @@ const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
+    <>
       {/* DESKTOP NAV */}
-      <div className="max-w-7xl w-full mx-auto">
-        <div className="sticky top-0 z-20 hidden h-[80px] w-full items-center justify-between lg:flex">
-          {/* LOGO */}
-          <HashLink href="#hero">
-            <BrandLogo />
-          </HashLink>
-          <nav>
+      <header className="hidden lg:block sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
+        <div className="max-w-7xl w-full mx-auto">
+          <nav className="h-[80px] flex w-full items-center justify-between">
+            {/* logo */}
+            <HashLink href="#hero">
+              <BrandLogo />
+            </HashLink>
+            {/* link items */}
             <ul className="flex gap-4 text-[18px]  text-gray-300">{menuItems}</ul>
-          </nav>
 
-          <div className="flex gap-3 text-gray-300">
-            <ThemeToggleButton />
-            <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
-          </div>
+            {/* theme toggle and resume button */}
+            <div className="flex gap-3 text-gray-300">
+              <ThemeToggleButton />
+              <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
+            </div>
+          </nav>
         </div>
-      </div>
+      </header>
 
       {/* MOBILE NAV */}
-      <div className="lg:hidden">
-        <div className="fixed top-0 z-20 flex h-[80px] w-full items-center justify-between bg-[#e9effd] px-2">
-          <div onClick={() => setOpen(!open)} className="">
-            {open && (
-              <button className="flex h-10 w-10 items-center justify-center border border-primary text-3xl text-primary">
-                <MdMenu />
+      <header className="lg:hidden sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
+        <div className="max-w-7xl w-full mx-auto">
+          <nav>
+            <div className="flex h-[80px] w-full items-center justify-between px-2">
+              {/* toggle button */}
+              <button
+                onClick={() => setOpen(!open)}
+                className="flex h-10 w-10 items-center justify-center border border-gray-300 text-3xl text-gray-300 rounded"
+              >
+                {open ? <MdMenu /> : <MdClose />}
               </button>
-            )}
 
-            {!open && (
-              <button className="flex h-10 w-10 items-center justify-center border border-primary text-3xl text-primary">
-                <MdClose />
-              </button>
-            )}
-          </div>
+              {/* theme toggle and resume button */}
+              <div className="flex gap-3 text-gray-300">
+                <ThemeToggleButton />
+                <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
+              </div>
+            </div>
 
-          <div className="flex items-center gap-4">light</div>
+            {/* sidebar links */}
+            <ul
+              className={`fixed top-[80px] z-20 flex h-full w-[180px] -translate-x-[100%] flex-col gap-2 bg-gray-900/90 pl-8 pt-5 font-semibold text-gray-300 transition-transform duration-500 ${
+                !open && "translate-x-0"
+              }`}
+            >
+              {menuItems}
+            </ul>
+          </nav>
         </div>
-
-        <nav className="">
-          <ul
-            className={`fixed top-[80px] z-20 flex h-full w-[180px] -translate-x-[100%] flex-col gap-2 bg-yellow-50/90 pl-8 pt-5 font-semibold text-[#212529] transition-transform duration-500 ${
-              !open && "translate-x-0"
-            }`}
-          >
-            {menuItems}
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 

@@ -52,6 +52,15 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        "smooth-move": "smoothMove 3s ease-in-out infinite",
+      },
+      keyframes: {
+        smoothMove: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
