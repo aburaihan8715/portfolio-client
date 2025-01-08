@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { motion } from "motion/react";
 const AboutMeTab = () => {
   const [tabIndex, setTabIndex] = useState(0);
-  console.log(tabIndex);
+
   return (
     <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
       <div className="ring-1 ring-gray-600 p-1 rounded-full">

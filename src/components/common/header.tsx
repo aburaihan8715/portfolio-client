@@ -15,9 +15,9 @@ const Header = () => {
       <li>
         <HashLink href="#about-me">About Me</HashLink>
       </li>
-      <li>
+      {/* <li>
         <HashLink href="#experiences">Experience</HashLink>
-      </li>
+      </li> */}
       <li>
         <HashLink href="#skills">Skills</HashLink>
       </li>
@@ -27,9 +27,9 @@ const Header = () => {
       <li>
         <HashLink href="#blogs">Blogs</HashLink>
       </li>
-      <li>
+      {/* <li>
         <HashLink href="#achievements">Achievements</HashLink>
-      </li>
+      </li> */}
     </>
   );
 
