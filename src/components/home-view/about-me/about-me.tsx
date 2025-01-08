@@ -7,16 +7,16 @@ import AboutMeTab from "./tab";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="scroll-m-20">
+    <section id="about-me" className="scroll-m-20 py-2 md:py-10">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="mb-10 flex justify-center">
+        <div className="mb-20 flex justify-center">
           <Heading text={`about me`} />
         </div>
-        <div className="flex">
-          <div className="flex-1 border p-10">
+        <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex-1 p-10 bg-gray-900 rounded-md">
             <Image src={programmingImage} alt="programming" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 px-2">
             <AboutMeTab />
           </div>
         </div>

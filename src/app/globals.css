@@ -20,6 +20,7 @@ body {
     #11151d
   );
   color: #eee;
+  overflow-x: hidden;
 }
 
 @layer utilities {

@@ -5,9 +5,9 @@ import profilePhot from "@/assets/images/p2.png";
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-[calc(100vh-80px)] scroll-m-20">
+    <section id="hero" className="min-h-[calc(100vh-80px)] scroll-m-20 py-2 md:py-10">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex py-2 md:py-10 md:flex-row flex-col items-center px-2">
+        <div className="flex md:flex-row flex-col items-center px-2">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0">
             <p className="text-xl font-semibold text-gray-300">Hi, I&apos;m Abu Raihan</p>
             <h1 className="md:text-5xl text-2xl mb-4 font-semibold mt-3 text-gray-300">Full-Stack Web Developer</h1>
