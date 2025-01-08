@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import BlogCard from "./blog-card";
+import BlogCard from "../home-view/feature-blogs/blog-card";
 
 const BlogTab = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -10,15 +10,15 @@ const BlogTab = () => {
       <div className="ring-1 ring-gray-600 p-1 rounded-full w-full max-w-md mx-auto">
         <TabList className="flex rounded-full items-center justify-center relative">
           <Tab selectedClassName="outline-0" className=" cursor-pointer px-8 py-2 rounded-full w-[50%] text-center">
-            Front-End
+            All
           </Tab>
 
           <Tab selectedClassName="outline-0" className="cursor-pointer px-8 py-2 rounded-full  w-[50%] text-center">
-            Back-End
+            Javascript
           </Tab>
 
           <Tab selectedClassName="outline-0" className="cursor-pointer px-8 py-2 rounded-full  w-[50%] text-center">
-            Tools
+            Responsive
           </Tab>
 
           <span
@@ -33,7 +33,7 @@ const BlogTab = () => {
         <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
             {[...Array(12)].map((_, index) => (
-              <BlogCard key={index} text="Front-End" />
+              <BlogCard key={index} text="All" />
             ))}
           </div>
         </div>
@@ -43,7 +43,7 @@ const BlogTab = () => {
         <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
             {[...Array(15)].map((_, index) => (
-              <BlogCard key={index} text="Back-End" />
+              <BlogCard key={index} text="Javascript" />
             ))}
           </div>
         </div>
@@ -53,7 +53,7 @@ const BlogTab = () => {
         <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
             {[...Array(9)].map((_, index) => (
-              <BlogCard key={index} text="Tools" />
+              <BlogCard key={index} text="Responsive" />
             ))}
           </div>
         </div>

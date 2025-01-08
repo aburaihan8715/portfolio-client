@@ -5,8 +5,9 @@ import Hero from "@/components/home-view/hero";
 import Skills from "@/components/home-view/skills";
 
 // import Achievements from "@/components/home-view/achievements";
-import Blogs from "@/components/home-view/bolos";
+import Blogs from "@/components/home-view/feature-blogs";
 import Projects from "@/components/home-view/projects";
+import FunFacts from "@/components/home-view/fun-facts";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       {/* <Experiences /> */}
       <Skills />
       <Projects />
+      <FunFacts />
       <Blogs />
       {/* <Achievements /> */}
     </main>

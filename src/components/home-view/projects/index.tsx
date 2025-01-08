@@ -10,7 +10,7 @@ const Projects = () => {
           <Heading text={`Projects`} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {[...Array(4)].map((_, index) => (
+          {[...Array(3)].map((_, index) => (
             <ProjectCard key={index} />
           ))}
         </div>

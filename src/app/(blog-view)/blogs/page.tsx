@@ -1,6 +1,7 @@
-import React from "react";
+import BlogTab from "@/components/blog-view/tab";
 import Heading from "@/components/common/heading";
-import BlogTab from "@/components/home-view/bolos/tab";
+
+import React from "react";
 
 const Blogs = () => {
   return (
