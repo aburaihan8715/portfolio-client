@@ -8,6 +8,8 @@ import Skills from "@/components/home-view/skills";
 import Blogs from "@/components/home-view/feature-blogs";
 import Projects from "@/components/home-view/projects";
 import FunFacts from "@/components/home-view/fun-facts";
+import Why from "@/components/home-view/why";
+import Contact from "@/components/home-view/contact";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Projects />
       <FunFacts />
       <Blogs />
+      <Why />
+      <Contact />
       {/* <Achievements /> */}
     </main>
   );

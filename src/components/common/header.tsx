@@ -25,7 +25,16 @@ const Header = () => {
         <HashLink href="#projects">Projects</HashLink>
       </li>
       <li>
+        <HashLink href="#fun-facts">Fun Facts</HashLink>
+      </li>
+      <li>
         <HashLink href="#blogs">Blogs</HashLink>
+      </li>
+      <li>
+        <HashLink href="#why">Why</HashLink>
+      </li>
+      <li>
+        <HashLink href="#contact">Contact</HashLink>
       </li>
       {/* <li>
         <HashLink href="#achievements">Achievements</HashLink>

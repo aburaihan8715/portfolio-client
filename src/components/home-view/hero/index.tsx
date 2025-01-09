@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
-import profilePhot from "@/assets/images/p2.png";
+import profilePhot from "@/assets/images/me.png";
 
 const Hero = () => {
   return (
