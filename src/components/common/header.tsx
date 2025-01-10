@@ -58,7 +58,13 @@ const Header = () => {
             {/* theme toggle and resume button */}
             <div className="flex gap-3 text-gray-300">
               <ThemeToggleButton />
-              <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1hUgu5Q5hMynQQHTTK8_SdShK8-8HSx1D"
+                target="_blank"
+                className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100"
+              >
+                Resume
+              </a>
             </div>
           </nav>
         </div>
@@ -80,7 +86,13 @@ const Header = () => {
               {/* theme toggle and resume button */}
               <div className="flex gap-3 text-gray-300">
                 <ThemeToggleButton />
-                <button className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100">Resume</button>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1hUgu5Q5hMynQQHTTK8_SdShK8-8HSx1D"
+                  target="_blank"
+                  className="border border-gray-300 px-3 py-2 rounded-md text-[18px] hover:bg-gray-700 transition duration-100"
+                >
+                  Resume
+                </a>
               </div>
             </div>
 
