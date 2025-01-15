@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import BlogCard from "../home-view/feature-blogs/blog-card";
 
 const BlogTab = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -31,31 +30,19 @@ const BlogTab = () => {
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
-            {[...Array(12)].map((_, index) => (
-              <BlogCard key={index} text="All" />
-            ))}
-          </div>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">tab1</div>
         </div>
       </TabPanel>
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
-            {[...Array(15)].map((_, index) => (
-              <BlogCard key={index} text="Javascript" />
-            ))}
-          </div>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">tab2</div>
         </div>
       </TabPanel>
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
-            {[...Array(9)].map((_, index) => (
-              <BlogCard key={index} text="Responsive" />
-            ))}
-          </div>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">tab3</div>
         </div>
       </TabPanel>
     </Tabs>

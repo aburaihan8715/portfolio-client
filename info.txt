@@ -2,6 +2,7 @@
 gray,cyan
 
 
+https://dummyimage.com/720x400
 
 // resources
 https://asfakahmed.netlify.app/

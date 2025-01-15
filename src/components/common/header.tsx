@@ -46,7 +46,7 @@ const Header = () => {
     <>
       {/* DESKTOP NAV */}
       <header className="hidden lg:block sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
-        <div className="max-w-7xl w-full mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-2">
           <nav className="h-[80px] flex w-full items-center justify-between">
             {/* logo */}
             <HashLink href="#hero">
@@ -72,7 +72,7 @@ const Header = () => {
 
       {/* MOBILE NAV */}
       <header className="lg:hidden sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)]">
-        <div className="max-w-7xl w-full mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-2">
           <nav>
             <div className="flex h-[80px] w-full items-center justify-between px-2">
               {/* toggle button */}
