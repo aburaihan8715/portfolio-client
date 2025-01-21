@@ -1,91 +1,120 @@
-"use client";
-import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import SkillCard from "./skill-card";
+'use client';
+import React, { useState } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import SkillCard from './skill-card';
 
-import { FaBootstrap, FaCss3, FaDev, FaGit, FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact, FaSass, FaYarn } from "react-icons/fa";
-import { DiMongodb, DiMysql } from "react-icons/di";
-import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiAntdesign, SiExpress, SiMongoose, SiNetlify, SiNpm, SiPostman, SiPrisma, SiReacttable, SiRedux, SiShadcnui, SiVite } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
-import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiVercelLine } from "react-icons/ri";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import {
+  FaBootstrap,
+  FaCss3,
+  FaDev,
+  FaGit,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+  FaSass,
+  FaYarn,
+} from 'react-icons/fa';
+import { DiMongodb, DiMysql } from 'react-icons/di';
+import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
+import {
+  SiAntdesign,
+  SiExpress,
+  SiMongoose,
+  SiNetlify,
+  SiNpm,
+  SiPostman,
+  SiPrisma,
+  SiReacttable,
+  SiRedux,
+  SiShadcnui,
+  SiVite,
+} from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
+import {
+  RiFirebaseFill,
+  RiNextjsFill,
+  RiTailwindCssFill,
+  RiVercelLine,
+} from 'react-icons/ri';
+import { TbBrandFramerMotion } from 'react-icons/tb';
 
 const frondEndSkills = [
   {
     id: 1,
-    title: "HTML",
+    title: 'HTML',
     icon: FaHtml5,
   },
   {
     id: 2,
-    title: "CSS",
+    title: 'CSS',
     icon: FaCss3,
   },
   {
     id: 3,
-    title: "Javascript",
+    title: 'Javascript',
     icon: FaJs,
   },
   {
     id: 4,
-    title: "TypeScript",
+    title: 'TypeScript',
     icon: BiLogoTypescript,
   },
   {
     id: 5,
-    title: "Bootstrap",
+    title: 'Bootstrap',
     icon: FaBootstrap,
   },
   {
     id: 6,
-    title: "Tailwind",
+    title: 'Tailwind',
     icon: RiTailwindCssFill,
   },
   {
     id: 7,
-    title: "Ant Design",
+    title: 'Ant Design',
     icon: SiAntdesign,
   },
   {
     id: 8,
-    title: "Shadcn ui",
+    title: 'Shadcn ui',
     icon: SiShadcnui,
   },
   {
     id: 9,
-    title: "Sass",
+    title: 'Sass',
     icon: FaSass,
   },
   {
     id: 10,
-    title: "React",
+    title: 'React',
     icon: FaReact,
   },
   {
     id: 11,
-    title: "Next",
+    title: 'Next',
     icon: RiNextjsFill,
   },
   {
     id: 12,
-    title: "Redux",
+    title: 'Redux',
     icon: SiRedux,
   },
 
   {
     id: 13,
-    title: "Motion",
+    title: 'Motion',
     icon: TbBrandFramerMotion,
   },
   {
     id: 14,
-    title: "Firebase",
+    title: 'Firebase',
     icon: RiFirebaseFill,
   },
   {
     id: 15,
-    title: "T Table",
+    title: 'T Table',
     icon: SiReacttable,
   },
 ];
@@ -93,43 +122,43 @@ const frondEndSkills = [
 const backEndSkills = [
   {
     id: 1,
-    title: "Node",
+    title: 'Node',
     icon: FaNodeJs,
   },
   {
     id: 2,
-    title: "TypeScript",
+    title: 'TypeScript',
     icon: BiLogoTypescript,
   },
   {
     id: 3,
-    title: "Express",
+    title: 'Express',
     icon: SiExpress,
   },
   {
     id: 5,
-    title: "Mongodb",
+    title: 'Mongodb',
     icon: DiMongodb,
   },
   {
     id: 6,
-    title: "Postgres",
+    title: 'Postgres',
     icon: BiLogoPostgresql,
   },
   {
     id: 7,
-    title: "MySQL",
+    title: 'MySQL',
     icon: DiMysql,
   },
 
   {
     id: 8,
-    title: "Mongoose",
+    title: 'Mongoose',
     icon: SiMongoose,
   },
   {
     id: 9,
-    title: "Prisma",
+    title: 'Prisma',
     icon: SiPrisma,
   },
 ];
@@ -137,52 +166,52 @@ const backEndSkills = [
 const tools = [
   {
     id: 1,
-    title: "Postman",
+    title: 'Postman',
     icon: SiPostman,
   },
   {
     id: 2,
-    title: "VS Code",
+    title: 'VS Code',
     icon: VscVscode,
   },
   {
     id: 3,
-    title: "Vercel",
+    title: 'Vercel',
     icon: RiVercelLine,
   },
   {
     id: 4,
-    title: "Github",
+    title: 'Github',
     icon: FaGithub,
   },
   {
     id: 5,
-    title: "Git",
+    title: 'Git',
     icon: FaGit,
   },
   {
     id: 6,
-    title: "NPM",
+    title: 'NPM',
     icon: SiNpm,
   },
   {
     id: 7,
-    title: "Yarn",
+    title: 'Yarn',
     icon: FaYarn,
   },
   {
     id: 8,
-    title: "Netlify",
+    title: 'Netlify',
     icon: SiNetlify,
   },
   {
     id: 9,
-    title: "Vite",
+    title: 'Vite',
     icon: SiVite,
   },
   {
     id: 10,
-    title: "Dev Tools",
+    title: 'Dev Tools',
     icon: FaDev,
   },
 ];
@@ -190,24 +219,38 @@ const tools = [
 const SkillsTab = () => {
   const [tabIndex, setTabIndex] = useState(0);
   return (
-    <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-      <div className="ring-1 ring-gray-600 p-1 rounded-full w-full max-w-md mx-auto">
-        <TabList className="flex rounded-full items-center justify-center relative">
-          <Tab selectedClassName="outline-0" className=" cursor-pointer px-8 py-2 rounded-full w-[50%] text-center">
+    <Tabs
+      selectedIndex={tabIndex}
+      onSelect={(index) => setTabIndex(index)}
+    >
+      <div className="mx-auto w-full max-w-md rounded-full p-1 ring-1 ring-gray-600">
+        <TabList className="relative flex items-center justify-center rounded-full">
+          <Tab
+            selectedClassName="outline-0"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
+          >
             Front-End
           </Tab>
 
-          <Tab selectedClassName="outline-0" className="cursor-pointer px-8 py-2 rounded-full  w-[50%] text-center">
+          <Tab
+            selectedClassName="outline-0"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
+          >
             Back-End
           </Tab>
 
-          <Tab selectedClassName="outline-0" className="cursor-pointer px-8 py-2 rounded-full  w-[50%] text-center">
+          <Tab
+            selectedClassName="outline-0"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
+          >
             Tools
           </Tab>
 
           <span
-            className={`absolute left-0 top-0 h-full w-[33.33%] bg-gray-700/50 rounded-full transition-transform duration-500 cursor-pointer ${
-              (tabIndex === 0 && "translate-x-0") || (tabIndex === 1 && "translate-x-[100%]") || (tabIndex === 2 && "translate-x-[200%]")
+            className={`absolute left-0 top-0 h-full w-[33.33%] cursor-pointer rounded-full bg-gray-700/50 transition-transform duration-500 ${
+              (tabIndex === 0 && 'translate-x-0') ||
+              (tabIndex === 1 && 'translate-x-[100%]') ||
+              (tabIndex === 2 && 'translate-x-[200%]')
             }`}
           />
         </TabList>

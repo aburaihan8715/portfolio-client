@@ -1,7 +1,7 @@
-import Footer from "@/components/common/footer";
-import Header from "@/components/common/header";
-import ScrollTop from "@/components/common/scroll-to-top";
-import { Toaster } from "sonner";
+import ScrollTop from '@/components/common/scroll-to-top';
+import { Toaster } from 'sonner';
+import Footer from '@/components/common/footer';
+import Header from '@/components/common/header';
 
 export default function HomeLayout({
   children,
@@ -12,10 +12,9 @@ export default function HomeLayout({
     <>
       <div className="">
         <Header />
-        <div>{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </div>
-
       <ScrollTop />
       <Toaster />
     </>
