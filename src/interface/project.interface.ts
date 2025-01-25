@@ -7,5 +7,4 @@ export interface IProject {
   techStack: string[];
   links: string[];
   createdAt: Date;
-  __v: number;
 }

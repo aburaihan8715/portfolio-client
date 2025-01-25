@@ -42,7 +42,7 @@ const FunFacts = () => {
         <div className="mb-20 flex justify-center">
           <Heading text="Fun Facts" />
         </div>
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-5 px-2 md:grid-cols-4">
           {funFacts.map(({ id, icon, end, label }) => (
             <FunFactCard key={id} icon={icon} end={end} label={label} />
           ))}

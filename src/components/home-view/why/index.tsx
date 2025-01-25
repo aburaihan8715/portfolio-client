@@ -12,7 +12,7 @@ const Why = () => {
         <div className="mb-20 flex justify-center">
           <Heading text={`Why`} />
         </div>
-        <div className="flex flex-col gap-10 md:flex-row">
+        <div className="flex flex-col gap-10 px-2 md:flex-row">
           <div className="flex-1 rounded-md p-10">
             <Image className="w-[70%]" src={whyImage} alt="why image" />
           </div>

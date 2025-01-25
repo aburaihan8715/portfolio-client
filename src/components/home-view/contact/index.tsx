@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="mb-20 flex justify-center">
           <Heading text={`Contact`} />
         </div>
-        <div className="flex flex-col gap-10 md:flex-row-reverse">
+        <div className="flex flex-col gap-10 px-2 md:flex-row-reverse">
           <div className="flex flex-1 justify-end rounded-md">
             <Image
               className="w-[70%]"

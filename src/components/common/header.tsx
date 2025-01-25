@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 import { MdClose, MdMenu } from 'react-icons/md';
-import ThemeToggleButton from './theme-toggle-button';
+// import ThemeToggleButton from './theme-toggle-button';
 import HashLink from './hash-link';
 import BrandLogo from './brand-logo';
 import Container from './container';
@@ -48,7 +48,7 @@ const Header = () => {
       {/* DESKTOP NAV */}
       <header className="sticky top-0 z-50 hidden bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)] md:block">
         <Container>
-          <nav className="flex h-[80px] w-full items-center justify-between">
+          <nav className="flex h-[80px] w-full items-center justify-between px-2">
             {/* logo */}
 
             <HashLink href="#hero">
@@ -62,7 +62,7 @@ const Header = () => {
 
             {/* theme toggle and resume button */}
             <div className="flex gap-3 text-gray-300">
-              <ThemeToggleButton />
+              {/* <ThemeToggleButton /> */}
               <a
                 href="https://drive.google.com/uc?export=download&id=1hUgu5Q5hMynQQHTTK8_SdShK8-8HSx1D"
                 target="_blank"
@@ -78,8 +78,8 @@ const Header = () => {
       {/* MOBILE NAV */}
       <header className="sticky top-0 z-50 bg-gray-900 shadow-[0px_1px_1px_rgba(255,255,255,0.3)] md:hidden">
         <Container>
-          <nav>
-            <div className="sticky top-0 flex h-[80px] w-full items-center justify-between">
+          <nav className="">
+            <div className="sticky top-0 flex h-[80px] w-full items-center justify-between px-2">
               <button
                 onClick={() => setOpen(!open)}
                 className="flex h-10 w-10 items-center justify-center rounded border border-gray-300 text-3xl text-gray-300"
@@ -88,7 +88,7 @@ const Header = () => {
               </button>
 
               <div className="flex gap-3 text-gray-300">
-                <ThemeToggleButton />
+                {/* <ThemeToggleButton /> */}
                 <a
                   href="https://drive.google.com/uc?export=download&id=1hUgu5Q5hMynQQHTTK8_SdShK8-8HSx1D"
                   target="_blank"

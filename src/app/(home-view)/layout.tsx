@@ -1,5 +1,4 @@
 import ScrollTop from '@/components/common/scroll-to-top';
-import { Toaster } from 'sonner';
 import Footer from '@/components/common/footer';
 import Header from '@/components/common/header';
 
@@ -16,7 +15,6 @@ export default function HomeLayout({
         <Footer />
       </div>
       <ScrollTop />
-      <Toaster />
     </>
   );
 }

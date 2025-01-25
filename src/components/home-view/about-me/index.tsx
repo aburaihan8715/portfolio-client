@@ -17,7 +17,7 @@ const AboutMe = () => {
           <div className="flex-1 rounded-md bg-gray-900 p-10">
             <Image src={programmingImage} alt="programming" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 px-2">
             <AboutMeTab />
           </div>
         </div>

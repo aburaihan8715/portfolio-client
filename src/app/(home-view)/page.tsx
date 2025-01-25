@@ -1,7 +1,7 @@
 import AboutMe from '@/components/home-view/about-me';
 import Hero from '@/components/home-view/hero';
 import Skills from '@/components/home-view/skills';
-import Blogs from '@/components/home-view/feature-blogs';
+import FeaturedBlogs from '@/components/home-view/featured-blogs';
 import Projects from '@/components/home-view/projects';
 import FunFacts from '@/components/home-view/fun-facts';
 import Why from '@/components/home-view/why';
@@ -15,7 +15,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <FunFacts />
-      <Blogs />
+      <FeaturedBlogs />
       <Why />
       <Contact />
     </main>

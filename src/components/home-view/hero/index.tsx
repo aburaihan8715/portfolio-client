@@ -11,7 +11,7 @@ const Hero = () => {
       className="min-h-[calc(100vh-80px)] scroll-m-20 py-2 md:py-10"
     >
       <Container>
-        <div className="flex flex-col items-center md:flex-row">
+        <div className="flex flex-col items-center px-2 md:flex-row">
           <div className="mb-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
             <p className="text-xl font-semibold text-gray-300">
               Hi, I&apos;m Abu Raihan
