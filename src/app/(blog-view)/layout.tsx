@@ -7,10 +7,12 @@ export default function BlogLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="">
+    <div>
       <BlogHeader />
-      <div>{children}</div>
-      <Footer />
+      <div className="overflow-x-hidden">{children}</div>
+      <div className="mx-auto w-full max-w-5xl">
+        <Footer />
+      </div>
     </div>
   );
 }

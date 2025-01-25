@@ -16,21 +16,21 @@ const BlogTab = ({ frontend, backend, all }: any) => {
         <TabList className="relative flex items-center justify-center rounded-full">
           <Tab
             selectedClassName="outline-0"
-            className="w-[50%] cursor-pointer rounded-full px-8 py-2 text-center"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
           >
             All
           </Tab>
 
           <Tab
             selectedClassName="outline-0"
-            className="w-[50%] cursor-pointer rounded-full px-8 py-2 text-center"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
           >
             Backend
           </Tab>
 
           <Tab
             selectedClassName="outline-0"
-            className="w-[50%] cursor-pointer rounded-full px-8 py-2 text-center"
+            className="w-[50%] cursor-pointer rounded-full py-2 text-center md:px-8"
           >
             Frontend
           </Tab>
@@ -47,7 +47,7 @@ const BlogTab = ({ frontend, backend, all }: any) => {
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
             {all.map((blog: IBlog) => (
               <BlogCard key={blog._id} blog={blog} />
             ))}
@@ -57,7 +57,7 @@ const BlogTab = ({ frontend, backend, all }: any) => {
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
             {backend.map((blog: IBlog) => (
               <BlogCard key={blog._id} blog={blog} />
             ))}
@@ -67,7 +67,7 @@ const BlogTab = ({ frontend, backend, all }: any) => {
 
       <TabPanel>
         <div className="mt-6 space-y-5">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
             {frontend.map((blog: IBlog) => (
               <BlogCard key={blog._id} blog={blog} />
             ))}

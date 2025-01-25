@@ -32,7 +32,7 @@ const Blogs = () => {
         <div className="mb-20 flex justify-center">
           <Heading text={`Blogs`} />
         </div>
-        <div>
+        <div className="px-2">
           <BlogTab
             frontend={frontendData}
             backend={backendData}

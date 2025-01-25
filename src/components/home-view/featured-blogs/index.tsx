@@ -33,7 +33,7 @@ const FeaturedBlogs = () => {
         <div className="grid grid-cols-1 gap-5 px-2 md:grid-cols-3">
           {blogs?.map((blog) => <BlogCard key={blog._id} blog={blog} />)}
         </div>
-        <div className="mt-2 flex justify-end">
+        <div className="mt-2 flex justify-end px-2">
           <Link
             href="/blogs"
             className="inline-flex w-fit rounded-md border border-gray-300 bg-transparent px-6 py-2 text-lg text-gray-300 transition duration-100 hover:bg-gray-700 focus:outline-none md:ml-4"

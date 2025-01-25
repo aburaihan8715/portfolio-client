@@ -10,7 +10,7 @@ const Skills = () => {
         <div className="mb-20 flex justify-center">
           <Heading text={`Skills`} />
         </div>
-        <div>
+        <div className="px-2">
           <SkillsTab />
         </div>
       </Container>

@@ -25,12 +25,10 @@ const BlogDetails = () => {
 
   if (error) return 'An error has occurred: ' + error.message;
 
-  // MAIN CONTENT
   return (
     <>
       <section className="">
         <div className="mx-auto max-w-5xl">
-          {/* Header */}
           <div className="relative mb-6 aspect-[16/9] rounded-lg">
             <Image
               src={
@@ -43,14 +41,10 @@ const BlogDetails = () => {
               fill
               className="rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            {/* Title */}
-            <h1 className="mt-4 text-4xl font-bold text-gray-900">
-              {blog?.title}
-            </h1>
           </div>
 
           {/* Author Information */}
-          <div className="mt-2 flex items-center justify-between text-sm text-gray-500">
+          <div className="mt-2 flex items-center justify-between px-2 text-sm text-gray-500">
             <div className="flex items-center">
               <div className="relative mr-3 h-10 w-10 rounded-full object-cover">
                 <Image
@@ -72,7 +66,7 @@ const BlogDetails = () => {
           </div>
 
           {/* Main Content */}
-          <div className="mb-4 mt-5">
+          <div className="mb-4 mt-5 px-2 text-gray-400">
             <QuillContent content={blog?.content} />
           </div>
         </div>

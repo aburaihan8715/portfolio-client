@@ -18,8 +18,6 @@ const Projects = () => {
 
   const projects: IProject[] = data?.data || [];
 
-  console.log(projects);
-
   if (isPending) return 'Loading...';
 
   if (error) return 'An error has occurred: ' + error.message;

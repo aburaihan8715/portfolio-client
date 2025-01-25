@@ -257,7 +257,7 @@ const SkillsTab = () => {
       </div>
 
       <TabPanel>
-        <div className="mt-6 space-y-5 px-2">
+        <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-5">
             {frondEndSkills.map((item) => (
               <SkillCard key={item.id} item={item} />
@@ -267,7 +267,7 @@ const SkillsTab = () => {
       </TabPanel>
 
       <TabPanel>
-        <div className="mt-6 space-y-5 px-2">
+        <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-5">
             {backEndSkills.map((item) => (
               <SkillCard key={item.id} item={item} />
@@ -277,7 +277,7 @@ const SkillsTab = () => {
       </TabPanel>
 
       <TabPanel>
-        <div className="mt-6 space-y-5 px-2">
+        <div className="mt-6 space-y-5">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-5">
             {tools.map((item) => (
               <SkillCard key={item.id} item={item} />
