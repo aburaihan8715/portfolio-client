@@ -31,7 +31,7 @@ const Hero = () => {
               <a
                 href="https://drive.google.com/uc?export=download&id=1hUgu5Q5hMynQQHTTK8_SdShK8-8HSx1D"
                 target="_blank"
-                className="inline-flex w-fit rounded-md border-0 bg-gray-700 px-6 py-2 text-lg text-cyan-500 transition duration-100 hover:bg-gray-500 focus:outline-none"
+                className="inline-flex w-fit rounded-md border-0 bg-gray-700 px-4 py-2 text-lg text-cyan-500 transition duration-100 hover:bg-gray-500 focus:outline-none"
               >
                 <span>Download Cv</span>
                 <span className="h-6 w-6 animate-bounce p-2 text-xl">
@@ -40,7 +40,7 @@ const Hero = () => {
               </a>
               <a
                 href="#about-me"
-                className="inline-flex w-fit rounded-md border border-gray-300 bg-transparent px-6 py-2 text-lg text-gray-300 transition duration-100 hover:bg-gray-700 focus:outline-none md:ml-4"
+                className="inline-flex w-fit rounded-md border border-gray-300 bg-transparent px-4 py-2 text-lg text-gray-300 transition duration-100 hover:bg-gray-700 focus:outline-none md:ml-4"
               >
                 About me
               </a>

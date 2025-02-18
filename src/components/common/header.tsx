@@ -18,7 +18,7 @@ const Header = () => {
   const menuItems = (
     <>
       <li>
-        <HashLink href="#about-me">About Me</HashLink>
+        <HashLink href="#about-me">About</HashLink>
       </li>
 
       <li>
